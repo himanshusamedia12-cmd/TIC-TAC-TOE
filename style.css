@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+html,body{
+    background-image: url(notebook-paper-background-dark-desktop.png);
+    width: 100%;
+    height: 100%;
+}
+
+
+header{
+    padding: 30px;
+    
+    font-size: xx-large;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.gameDashbord{
+   
+    width: 50%;
+    height: 100%;
+    margin-top: 45px;
+    border-right: 2px solid white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Show_Turn{
+    margin-bottom: 40px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+
+.GameContainer{
+
+    width: 60%;
+    height: 65%;
+    padding: 20px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 9vw);
+    grid-template-rows: repeat(3, 6vw);
+    
+    border: 2px solid white ;
+}
+.GameBox{
+    border: 1px solid black;
+    font-size:xx-large;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:url('pen.png') 0 32, crosshair;
+}
+
+.GameBox:hover{
+        background-color: rgb(42, 53, 42);
+}
+
+.bb{
+    border-bottom: none;
+}
+
+.bt{
+    border-top: none;
+}
+
+.br{
+    border-right: none;
+}
+
+.bl{
+    border-left: none;
+}
+
+
+.scoreDashBord{
+
+    /* background-color: black; */
+     width: 50%;
+    height: 80%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreDashBord h2{
+   
+   margin-bottom: 20px;
+    font-size: xx-large;
+    font-weight: 700;   
+}
+
+.score_contaner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.ShowTurnAttrebut{
+    width: 100%;
+    padding: 0 25px 0 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ShowTurnAttrebut span, .Score_value span{
+
+    width: 100px;
+    padding: 10px;
+    font-size: x-large;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ShowTurnAttrebut span{
+    font-size: xx-large;
+}
+
+.Score_bord{
+ 
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 0 25px;
+    overflow: scroll;
+
+}
+.Score_bord::-webkit-scrollbar{
+    display: none;
+
+}
+
+.Score_value{
+         display: flex;
+         justify-content:space-between;
+
+}
+
+.button_Container{
+    width: 60%;
+    margin-top: 30px;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.New_game_Button ,.Restar_Button{
+    background-color: brown;
+    width: 200px;
+    padding:  7px  0  7px  0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line {
+    background-color: brown;
+    width: 21%;
+    
+    height: 3px;
+    position: absolute;
+    transform: translate(2px , 3px),rotate(90deg);
+
+    transition: width 1s ease-in-out;
+}
